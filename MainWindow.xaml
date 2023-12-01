@@ -1,0 +1,98 @@
+﻿<dx:ThemedWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui" 
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+     xmlns:userControls="clr-namespace:WpfDevExpress1"
+    x:Class="MainWindow "
+    Title="MainWindow" Height="800" Width="1000"
+    dx:ThemeManager.ThemeName="Win11Light">
+    <!-- Stil ve Ek Renk Tanımları -->
+    <dx:ThemedWindow.Resources>
+        <!-- Ek renk tanımı -->
+        <SolidColorBrush x:Key="HoverColor">#8B8172</SolidColorBrush>
+
+        <!-- Stil tanımı -->
+        <Style x:Key="NavigationButtonStyle" TargetType="{x:Type dxwui:HamburgerMenuNavigationButton}">
+            <!-- Şeffaf arkaplan rengi -->
+            <Setter Property="Background" Value="Transparent"/>
+
+            <!-- Fare üzerine gelindiğinde arkaplan rengi değişimi -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource HoverColor}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </dx:ThemedWindow.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="336*"/>
+        </Grid.ColumnDefinitions>
+     
+        <!--<userControls:UserTable Grid.Column="1"/>-->
+
+        <dxwui:HamburgerMenu PaneBackground="#FFEDE9E6" Background="{x:Null}" HorizontalHeaderBackground="#FF8B8172" BottomBarBackground="#FF8B8172" Grid.ColumnSpan="3">
+            <dxwui:HamburgerMenu.BottomBarItems>
+                <dxwui:HamburgerMenuBottomBarNavigationButton Content="Settings" GlyphHeight="16" GlyphWidth="16"/>
+                <dxwui:HamburgerMenuBottomBarNavigationButton Content="About" GlyphHeight="16" GlyphWidth="16"/>
+            </dxwui:HamburgerMenu.BottomBarItems>
+
+
+            <!-- Yeni Sayfa 1 -->
+            <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}"  Width="198" Padding="0,0,0,0" Glyph="/Icons/home-icon.png">
+                <dxwui:HamburgerMenuNavigationButton.ContentTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Width="100">
+                            <TextBlock Text="Anasayfa" Foreground="Black" Margin="0,8,0,8"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </dxwui:HamburgerMenuNavigationButton.ContentTemplate>
+            </dxwui:HamburgerMenuNavigationButton>
+
+            <!-- Yeni Sayfa 2 -->
+            <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}"  Glyph="/Icons/user-icon.png">
+                <dxwui:HamburgerMenuNavigationButton.ContentTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Width="100">
+
+                            <TextBlock Text="Kullanıcılar" Foreground="Black" Margin="0,8,0,8"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </dxwui:HamburgerMenuNavigationButton.ContentTemplate>
+            </dxwui:HamburgerMenuNavigationButton>
+
+            <!-- Yeni Sayfa 3 -->
+            <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}"  Glyph="/Icons/company-icon.png">
+                <dxwui:HamburgerMenuNavigationButton.ContentTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Width="100">
+                            <TextBlock Text="Şirketler" Foreground="Black" Margin="0,8,0,8"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </dxwui:HamburgerMenuNavigationButton.ContentTemplate>
+            </dxwui:HamburgerMenuNavigationButton>
+
+            <!-- Yeni Sayfa 4 -->
+            <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}" Glyph="/Icons/department-icon.png">
+                <dxwui:HamburgerMenuNavigationButton.ContentTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Width="100">
+                            <TextBlock Text="Departmanlar" Foreground="Black" Margin="0,8,0,8"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </dxwui:HamburgerMenuNavigationButton.ContentTemplate>
+            </dxwui:HamburgerMenuNavigationButton>
+
+            <!-- Hyperlink Butonu -->
+            <dxwui:HamburgerMenuHyperlinkButton Content="Destek" NavigateUri="https://www.devexpress.com/Support">
+                <dxwui:HamburgerMenuHyperlinkButton.Foreground>
+                    <SolidColorBrush Color="#FFFFA799" Opacity="0.84"/>
+                </dxwui:HamburgerMenuHyperlinkButton.Foreground>
+            </dxwui:HamburgerMenuHyperlinkButton>
+        </dxwui:HamburgerMenu>
+    </Grid>
+</dx:ThemedWindow>
