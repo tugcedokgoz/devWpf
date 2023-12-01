@@ -9,4 +9,10 @@ Partial Public Class MainWindow
     Public Sub New()
         InitializeComponent()
     End Sub
+    Private Sub KullaniciButton_Click(sender As Object, e As RoutedEventArgs)
+        Dim userTable As New UserTable()
+        Grid.SetColumn(userTable, 1)
+        mainGrid.Children.Add(userTable)
+    End Sub
+
 End Class

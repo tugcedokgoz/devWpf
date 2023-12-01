@@ -27,7 +27,7 @@
         </Style>
     </dx:ThemedWindow.Resources>
 
-    <Grid>
+    <Grid Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="8*"/>
             <ColumnDefinition Width="336*"/>
@@ -54,7 +54,7 @@
             </dxwui:HamburgerMenuNavigationButton>
 
             <!-- Yeni Sayfa 2 -->
-            <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}"  Glyph="/Icons/user-icon.png">
+            <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}"  Glyph="/Icons/user-icon.png" Click="KullaniciButton_Click">
                 <dxwui:HamburgerMenuNavigationButton.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Width="100">
