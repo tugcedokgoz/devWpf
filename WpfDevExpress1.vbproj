@@ -28,10 +28,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="devexpress.wpf.accordion" Version="23.1.6" />
     <PackageReference Include="devexpress.wpf.controls" Version="23.1.6" />
     <PackageReference Include="DevExpress.Wpf.Core" Version="23.1.6" />
     <PackageReference Include="devexpress.wpf.grid.core" Version="23.1.6" />
     <PackageReference Include="DevExpress.Wpf.Themes.All" Version="23.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WcfService1\WcfService1.vbproj" />
   </ItemGroup>
 
   <ItemGroup>

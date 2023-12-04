@@ -11,8 +11,7 @@ Partial Public Class MainWindow
     End Sub
     Private Sub KullaniciButton_Click(sender As Object, e As RoutedEventArgs)
         Dim userTable As New UserTable()
-        Grid.SetColumn(userTable, 1)
-        mainGrid.Children.Add(userTable)
+        pageView.Content = userTable
     End Sub
 
 End Class

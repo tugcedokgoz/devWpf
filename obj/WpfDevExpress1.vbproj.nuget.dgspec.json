@@ -4,6 +4,21 @@
     "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WpfDevExpress1\\WpfDevExpress1.vbproj": {}
   },
   "projects": {
+    "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WcfService1\\WcfService1.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WcfService1\\WcfService1.vbproj",
+        "projectName": "WcfService1",
+        "projectPath": "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WcfService1\\WcfService1.vbproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
     "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WpfDevExpress1\\WpfDevExpress1.vbproj": {
       "version": "1.0.0",
       "restore": {
@@ -37,7 +52,11 @@
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WcfService1\\WcfService1.vbproj": {
+                "projectPath": "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WcfService1\\WcfService1.vbproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -55,6 +74,10 @@
               "version": "[23.1.6, )"
             },
             "DevExpress.Wpf.Themes.All": {
+              "target": "Package",
+              "version": "[23.1.6, )"
+            },
+            "devexpress.wpf.accordion": {
               "target": "Package",
               "version": "[23.1.6, )"
             },

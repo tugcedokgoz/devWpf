@@ -92,4 +92,8 @@ C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\bin\Debug\net7.0-w
 C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\bin\Debug\net7.0-windows\DevExpress.Xpf.Grid.v23.1.Extensions.dll
 C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\bin\Debug\net7.0-windows\DevExpress.Xpf.Grid.v23.1.dll
 C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\obj\Debug\net7.0-windows\View\UserControls\UserTable.baml
-C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.vb
+C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\bin\Debug\net7.0-windows\DevExpress.Xpf.Accordion.v23.1.dll
+C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\bin\Debug\net7.0-windows\WcfService1.dll
+C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\bin\Debug\net7.0-windows\WcfService1.pdb
+C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\bin\Debug\net7.0-windows\WcfService1.xml
+C:\Users\tugcedokgoz\Desktop\WPF\WpfDevExpress\WpfDevExpress1\bin\Debug\net7.0-windows\WcfService1.dll.config

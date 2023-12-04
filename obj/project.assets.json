@@ -141,6 +141,25 @@
           }
         }
       },
+      "DevExpress.Wpf.Accordion/23.1.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.6]",
+          "DevExpress.Mvvm": "[23.1.6]",
+          "DevExpress.Wpf.Controls": "[23.1.6]",
+          "DevExpress.Wpf.Core": "[23.1.6]"
+        },
+        "compile": {
+          "lib/net6.0-windows/DevExpress.Xpf.Accordion.v23.1.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows/DevExpress.Xpf.Accordion.v23.1.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DevExpress.Wpf.Controls/23.1.6": {
         "type": "package",
         "dependencies": {
@@ -1001,6 +1020,15 @@
             "rid": "win"
           }
         }
+      },
+      "WcfService1/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/WcfService1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WcfService1.dll": {}
+        }
       }
     }
   },
@@ -1111,6 +1139,26 @@
         "lib/net452/DevExpress.Printing.v23.1.Core.xml",
         "lib/netstandard2.0/DevExpress.Printing.v23.1.Core.dll",
         "lib/netstandard2.0/DevExpress.Printing.v23.1.Core.xml"
+      ]
+    },
+    "DevExpress.Wpf.Accordion/23.1.6": {
+      "sha512": "/5xf124bzETHiSKKma2YW5FUoLmbiFqGBafvGaZoyWOxE1rSlVwd97L9Y4rHD7l5E6qIbtJ6avk5iz3ubMFXbQ==",
+      "type": "package",
+      "path": "devexpress.wpf.accordion/23.1.6",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.wpf.accordion.23.1.6.nupkg.sha512",
+        "devexpress.wpf.accordion.nuspec",
+        "lib/net452/Design/DevExpress.Xpf.Accordion.v23.1.Design.dll",
+        "lib/net452/Design/DevExpress.Xpf.Accordion.v23.1.DesignTools.dll",
+        "lib/net452/DevExpress.Xpf.Accordion.v23.1.dll",
+        "lib/net452/DevExpress.Xpf.Accordion.v23.1.xml",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.Accordion.v23.1.DesignTools.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Accordion.v23.1.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Accordion.v23.1.xml",
+        "tools/VisualStudioToolsManifest.xml"
       ]
     },
     "DevExpress.Wpf.Controls/23.1.6": {
@@ -2681,12 +2729,19 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "WcfService1/1.0.0": {
+      "type": "project",
+      "path": "../WcfService1/WcfService1.vbproj",
+      "msbuildProject": "../WcfService1/WcfService1.vbproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
       "DevExpress.Wpf.Core >= 23.1.6",
       "DevExpress.Wpf.Themes.All >= 23.1.6",
+      "WcfService1 >= 1.0.0",
+      "devexpress.wpf.accordion >= 23.1.6",
       "devexpress.wpf.controls >= 23.1.6",
       "devexpress.wpf.grid.core >= 23.1.6"
     ]
@@ -2730,7 +2785,11 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WcfService1\\WcfService1.vbproj": {
+              "projectPath": "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WcfService1\\WcfService1.vbproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2748,6 +2807,10 @@
             "version": "[23.1.6, )"
           },
           "DevExpress.Wpf.Themes.All": {
+            "target": "Package",
+            "version": "[23.1.6, )"
+          },
+          "devexpress.wpf.accordion": {
             "target": "Package",
             "version": "[23.1.6, )"
           },

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7pVolnYCiR2XB0L2tQkE3FCbhGg9akr5f1hUROv1wY/xGlit7woIc59p3xh/g8sjTZOsqSLbs0B/oiUoEqW+EQ==",
+  "dgSpecHash": "MPnS0yeWYEv2qYF4hYp5RHOhIg0+9wZYO0fh1TJEbQC7t1DLmgNLwbLcNfHnHCEBGh5kfXAtIv/lZDiTsow2ew==",
   "success": true,
   "projectFilePath": "C:\\Users\\tugcedokgoz\\Desktop\\WPF\\WpfDevExpress\\WpfDevExpress1\\WpfDevExpress1.vbproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.pdf.core\\23.1.6\\devexpress.pdf.core.23.1.6.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.pdf.drawing\\23.1.6\\devexpress.pdf.drawing.23.1.6.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.printing.core\\23.1.6\\devexpress.printing.core.23.1.6.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.wpf.accordion\\23.1.6\\devexpress.wpf.accordion.23.1.6.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.wpf.controls\\23.1.6\\devexpress.wpf.controls.23.1.6.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.wpf.core\\23.1.6\\devexpress.wpf.core.23.1.6.nupkg.sha512",
     "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.wpf.grid.core\\23.1.6\\devexpress.wpf.grid.core.23.1.6.nupkg.sha512",

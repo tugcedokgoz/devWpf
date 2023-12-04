@@ -107,6 +107,20 @@
           }
         }
       },
+      "DevExpress.Wpf.Accordion/23.1.6": {
+        "dependencies": {
+          "DevExpress.Data": "23.1.6",
+          "DevExpress.Mvvm": "23.1.6",
+          "DevExpress.Wpf.Controls": "23.1.6",
+          "DevExpress.Wpf.Core": "23.1.6"
+        },
+        "runtime": {
+          "lib/net6.0-windows/DevExpress.Xpf.Accordion.v23.1.dll": {
+            "assemblyVersion": "23.1.6.0",
+            "fileVersion": "23.1.6.0"
+          }
+        }
+      },
       "DevExpress.Wpf.Controls/23.1.6": {
         "dependencies": {
           "DevExpress.Data": "23.1.6",
@@ -855,6 +869,13 @@
       "sha512": "sha512-J655BOtW7wbGenNdp8N2J3byHQz7fwJ9zOOu+ygFY7vBlc5r/kzYZBUZ60Oa8F5r7doW37/+3Z0P0TKkXl80hg==",
       "path": "devexpress.printing.core/23.1.6",
       "hashPath": "devexpress.printing.core.23.1.6.nupkg.sha512"
+    },
+    "DevExpress.Wpf.Accordion/23.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/5xf124bzETHiSKKma2YW5FUoLmbiFqGBafvGaZoyWOxE1rSlVwd97L9Y4rHD7l5E6qIbtJ6avk5iz3ubMFXbQ==",
+      "path": "devexpress.wpf.accordion/23.1.6",
+      "hashPath": "devexpress.wpf.accordion.23.1.6.nupkg.sha512"
     },
     "DevExpress.Wpf.Controls/23.1.6": {
       "type": "package",

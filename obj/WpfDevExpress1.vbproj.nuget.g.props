@@ -23,5 +23,6 @@
     <PkgDevExpress_Wpf_Core Condition=" '$(PkgDevExpress_Wpf_Core)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.core\23.1.6</PkgDevExpress_Wpf_Core>
     <PkgDevExpress_Wpf_Grid_Core Condition=" '$(PkgDevExpress_Wpf_Grid_Core)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.grid.core\23.1.6</PkgDevExpress_Wpf_Grid_Core>
     <PkgDevExpress_Wpf_Controls Condition=" '$(PkgDevExpress_Wpf_Controls)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.controls\23.1.6</PkgDevExpress_Wpf_Controls>
+    <PkgDevExpress_Wpf_Accordion Condition=" '$(PkgDevExpress_Wpf_Accordion)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.accordion\23.1.6</PkgDevExpress_Wpf_Accordion>
   </PropertyGroup>
 </Project>
