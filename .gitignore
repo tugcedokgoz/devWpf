@@ -396,11 +396,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-
-
-# Migration folders
-PurchasingSystem/PurchasingSystem.DataAccess/Migrations
-
-
-# DbContex file
-PurchasingSystem/PurchasingSystem.DataAccess/Contexts/PurchasingContext.cs
