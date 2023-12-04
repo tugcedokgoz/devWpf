@@ -29,19 +29,19 @@
 
     <Grid Name="mainGrid">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="12*"/>
             <ColumnDefinition Width="336*"/>
         </Grid.ColumnDefinitions>
      
         <!--<userControls:UserTable Grid.Column="1"/>-->
 
-        <dxwui:HamburgerMenu PaneBackground="#FFEDE9E6" Background="{x:Null}" HorizontalHeaderBackground="#FF8B8172" BottomBarBackground="#FF8B8172" Grid.ColumnSpan="3">
+        <dxwui:HamburgerMenu PaneBackground="#FFEDE9E6" Background="{x:Null}"   HorizontalHeaderBackground="#FF8B8172" BottomBarBackground="#FF8B8172" Grid.ColumnSpan="3" >
             <dxwui:HamburgerMenu.BottomBarItems>
                 <dxwui:HamburgerMenuBottomBarNavigationButton Content="Settings" GlyphHeight="16" GlyphWidth="16"/>
                 <dxwui:HamburgerMenuBottomBarNavigationButton Content="About" GlyphHeight="16" GlyphWidth="16"/>
             </dxwui:HamburgerMenu.BottomBarItems>
-
-
+             
+            
             <!-- Yeni Sayfa 1 -->
             <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}"  Width="198" Padding="0,0,0,0" Glyph="/Icons/home-icon.png">
                 <dxwui:HamburgerMenuNavigationButton.ContentTemplate>
@@ -85,6 +85,16 @@
                         </StackPanel>
                     </DataTemplate>
                 </dxwui:HamburgerMenuNavigationButton.ContentTemplate>
+            </dxwui:HamburgerMenuNavigationButton>
+
+            <dxwui:HamburgerMenuNavigationButton  Style="{StaticResource NavigationButtonStyle}" Glyph="/Icons/department-icon.png"  Width="195">
+                <TreeView Width="141" Background="Transparent">
+                    <TreeViewItem Header="Departman" IsExpanded="false" Background="Transparent">
+                        <StackPanel Background="Transparent">
+                            <Button Content="Muhasebe" Background="Transparent" BorderBrush="Transparent" Width="98"/>
+                        </StackPanel>
+                    </TreeViewItem>
+                </TreeView>
             </dxwui:HamburgerMenuNavigationButton>
 
             <!-- Hyperlink Butonu -->
