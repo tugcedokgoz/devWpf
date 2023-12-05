@@ -36,10 +36,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WcfService1\WcfService1.vbproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="Icons\company-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

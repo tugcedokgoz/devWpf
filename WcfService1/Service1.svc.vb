@@ -19,9 +19,7 @@ Public Class Service1
 
         Dim da As SqlDataAdapter = New SqlDataAdapter(com)
 
-        Dim dt As DataTable = New DataTable("myTab")
 
-        dt.Load(dt)
 
     End Function
 
