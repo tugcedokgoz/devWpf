@@ -47,6 +47,9 @@
                 <dxwui:HamburgerMenuBottomBarNavigationButton Content="Settings" GlyphHeight="16" GlyphWidth="16"/>
                 <dxwui:HamburgerMenuBottomBarNavigationButton Content="About" GlyphHeight="16" GlyphWidth="16"/>
             </dxwui:HamburgerMenu.BottomBarItems>
+            <dxwui:HamburgerMenu.Content>
+                <dxwui:NavigationFrame  Grid.Column="1"  Name="pageView"  Height="auto" Width="auto" Margin="2,0,0,30"/>
+            </dxwui:HamburgerMenu.Content>
 
             <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}"  Glyph="/Icons/home-icon.png">
                 <dxa:AccordionControl IsExpanded="True" Background="#EDE9E6">
@@ -60,30 +63,18 @@
 
 
             <!-- Yeni Sayfa 2 -->
-            <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}"  Glyph="/Icons/user-icon.png" Click="KullaniciButton_Click">
+            <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}" Glyph="/Icons/user-icon.png" Click="KullaniciButton_Click">
                 <dxa:AccordionControl IsExpanded="True" Background="#EDE9E6">
-                    <dxa:AccordionItem Header="Kullanıcılar" Width="144" Background="#FFEDE9E6" MouseUp="KullaniciButton_Click">
-                        <dxa:AccordionItem.Style>
-                            <Style TargetType="dxa:AccordionItem">
-                                <Style.Triggers>
-                                    <EventTrigger RoutedEvent="MouseUp">
-                                        <EventTrigger.Actions>
-                                            <BeginStoryboard>
-                                                <Storyboard>
-                                                    <ColorAnimation Storyboard.TargetProperty="(dxa:AccordionItem.Background).(SolidColorBrush.Color)"
-                                                To="#EDE9E6" Duration="0:0:0" />
-                                                </Storyboard>
-                                            </BeginStoryboard>
-                                        </EventTrigger.Actions>
-                                    </EventTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </dxa:AccordionItem.Style>
+                    <dxa:AccordionItem Header="Kullanıcılar" Width="144" Background="#FFEDE9E6" >
+                        <dxa:AccordionItem Header="Müşteriler" MouseUp="Customers_Click"/>
+                        <dxa:AccordionItem Header="Stajyerler" MouseUp="Interns_Click"/>
+                        <dxa:AccordionItem Header="Tüzel Kişiler" MouseUp="LegalPersons_Click"/>
+                        <dxa:AccordionItem Header="Personeller" MouseUp="Employees_Click"/>
+                        <dxa:AccordionItem Header="Tedarikçiler" MouseUp="Suppliers_Click"/>
                     </dxa:AccordionItem>
-
                 </dxa:AccordionControl>
-
             </dxwui:HamburgerMenuNavigationButton>
+
 
             <!-- Yeni Sayfa 3 -->
             <dxwui:HamburgerMenuNavigationButton Style="{StaticResource NavigationButtonStyle}"  Glyph="/Icons/company-icon.png">
@@ -115,9 +106,6 @@
             </dxwui:HamburgerMenuHyperlinkButton>
         </dxwui:HamburgerMenu>
 
-
-
-        <Frame Grid.Column="1"  Name="pageView"  Height="auto" Width="auto" Margin="2,0,0,30"/>
 
 
     </Grid>
